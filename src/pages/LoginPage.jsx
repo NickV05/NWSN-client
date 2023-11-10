@@ -30,7 +30,7 @@ const LoginPage = () => {
   return (
     <section>
       <div>
-        <div class="md:w-4/12 lg:ml-6 lg:w-4/12">
+        <div>
           <form onSubmit={handleLoginSubmit}>
             <div>
               <input
@@ -55,7 +55,7 @@ const LoginPage = () => {
             <div>
               <p>
                 {errorMessage && <p>{errorMessage}</p>}
-                Don't have an account yet?
+                Do not have an account yet?
                 <Link to="/signup"> Sign Up</Link>
               </p>
             </div>
