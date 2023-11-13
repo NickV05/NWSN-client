@@ -68,26 +68,6 @@ const SignupPage = () => {
                 />
               </div>
 
-              <div>
-                <input
-                  type="text"
-                  name="username"
-                  id="exampleFormControlInput33"
-                  placeholder="Username"
-                  onChange={handleTextChange}
-                />
-              </div>
-
-              <div>
-                <input
-                  type="text"
-                  name="location"
-                  id="exampleFormControlInput33"
-                  placeholder="Location"
-                  onChange={handleTextChange}
-                />
-              </div>
-
               <button type="submit">Sign up</button>
 
               <div>

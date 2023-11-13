@@ -2,3 +2,15 @@
   display:flex;
   flex-direction: column;
 }
+
+.table1{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly
+}
+
+.table2{
+  display:flex;
+  flex-direction: column;
+
+}
