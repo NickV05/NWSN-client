@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
-import Slider from "../components/Slider";
+import Slider1 from "../components/Slider1";
+import Slider2 from "../components/Slider2";
+import { useState } from "react";
+import CountUp from "react-countup";
 
 const HomePage = () => {
+  const [vision, setVision] = useState(false)
   return (
     <div>
       <h2>THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
@@ -31,9 +35,40 @@ const HomePage = () => {
         homelessness. You can make a difference!
       </p>
 
-      <div class="table1">
-        <div class="table2">
-          <h4>Mission</h4>
+      <div>
+        {vision ? (
+          <div>
+            <button disabled={true}>Vision</button>
+            <button
+              onClick={() => {
+                setVision(!vision);
+              }}
+            >
+              Mission
+            </button>
+          </div>
+        ) : (
+          <div>
+            <button
+              onClick={() => {
+                setVision(!vision);
+              }}
+            >
+              Vision
+            </button>
+            <button disabled={true}>Mission</button>
+          </div>
+        )}
+
+        {vision ? (
+          <p>
+            A world of racial, social and gender equity, free of violence
+            against women and children, where every woman and child will have a
+            safe home and in times of transition, trauma informed shelter and
+            safe havens with deep protective factors, to assure they can heal,
+            grow, thrive and blossom into who they are meant to be.
+          </p>
+        ) : (
           <p>
             Our mission is to help women and children experiencing or at risk of
             homelessness, and the women’s shelters and safe haven programs that
@@ -55,18 +90,7 @@ const HomePage = () => {
             equity for women and their children and an engine of social and
             economic prosperity for all.
           </p>
-        </div>
-
-        <div class="table2">
-          <h4>Vision</h4>
-          <p>
-            A world of racial, social and gender equity, free of violence
-            against women and children, where every woman and child will have a
-            safe home and in times of transition, trauma informed shelter and
-            safe havens with deep protective factors, to assure they can heal,
-            grow, thrive and blossom into who they are meant to be.
-          </p>
-        </div>
+        )}
       </div>
 
       <div class="table1">
@@ -140,36 +164,44 @@ const HomePage = () => {
       <div class="table2">
         <div class="table1">
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={178885} duration={2.2}/> +</h2>
             <h2>BED NIGHTS ANNUALLY</h2>
           </div>
 
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={348096} duration={2.2}/> +</h2>
             <h2>NOURISHING MEALS SERVED ANNUALLY</h2>
           </div>
 
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={15391} duration={2.2}/> +</h2>
             <h2>WOMEN AND CHILDREN SHELTERED OR HOUSED ANNUALLY</h2>
           </div>
 
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={13948} duration={2.2}/> +</h2>
             <h2> COUNSELING SESSIONS ANNUALLY</h2>
           </div>
         </div>
 
         <div class="table1">
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={758} duration={2.2}/> +</h2>
             <h2>EMPLOYMENT ASSISTANCE AND TRAINING PROVIDED</h2>
           </div>
 
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={1151} duration={2.2}/> +</h2>
             <h2> ARTS AND ENRICHMENT ACTIVITIES HOSTED</h2>
           </div>
 
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2}/> +</h2>
             <h2>LIVES CHANGED</h2>
           </div>
 
           <div>
+          <h2><CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2}/> +</h2>
             <h2>EDUCATIONAL SUPPORTS FOR ALL AGES</h2>
           </div>
         </div>
@@ -185,7 +217,7 @@ const HomePage = () => {
       <h3>THE OFFICIAL SPONSORS OF THE NWSN MAKE ALL WE DO POSSIBLE!</h3>
       <h4>Powering the NWSN, Powering Change for Safer, Brighter Futures</h4>
       <button>Become An Official Sponsor</button>
-      <Slider />
+      <Slider1/>
       <button>Learn More About Our Sponsors</button>
       <h4>
         The NWSN Thanks Its Generous Sponsors for Making All We Do Possible!
@@ -199,7 +231,7 @@ const HomePage = () => {
         and its members.
       </p>
       <button>Become Our Partner and Provider</button>
-      <Slider />
+      <Slider2 />
       <button>Learn More About Our Partners and Providers</button>
       <h4>The NWSN Thanks Its Partners and Providers In Shared Mission!</h4>
 
@@ -229,37 +261,36 @@ const HomePage = () => {
       </p>
 
       <div class="table1">
-      <Link>Become A Member Today!</Link>
-      <Link>Donate To Make A Difference Today!</Link>    
+        <Link>Become A Member Today!</Link>
+        <Link>Donate To Make A Difference Today!</Link>
       </div>
 
       <footer class="table2">
-      <div class="table1"> 
+        <div class="table1">
           <form class="table2">
-          <h5>SIGN UP FOR OUR NEWSLETTER</h5>
-          <input type="text" placeholder="Enter email"/>
-          <button type="submit">Sign Up</button>
+            <h5>SIGN UP FOR OUR NEWSLETTER</h5>
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">Sign Up</button>
           </form>
 
           <div class="table2">
-          <h5>QUICK LINKS</h5>
-          <ul class="table2">
-            <Link>Our Impact</Link>
-            <Link>News & Advocacy Alerts</Link>
-            <Link>About Us</Link>
-            <Link>Get Involved</Link>
-            <Link>Contact Us</Link>
-            <Link>Member Portal</Link>
-            <Link>Donate</Link>
-          </ul>
-            
+            <h5>QUICK LINKS</h5>
+            <ul class="table2">
+              <Link>Our Impact</Link>
+              <Link>News & Advocacy Alerts</Link>
+              <Link>About Us</Link>
+              <Link>Get Involved</Link>
+              <Link>Contact Us</Link>
+              <Link>Member Portal</Link>
+              <Link>Donate</Link>
+            </ul>
           </div>
 
           <div class="table2">
-          <h5>FOLLOW US</h5>
-          <a>Instagram</a>
-          <a>Facebook</a>
-          <a>Twitter</a>
+            <h5>FOLLOW US</h5>
+            <a>Instagram</a>
+            <a>Facebook</a>
+            <a>Twitter</a>
           </div>
         </div>
 
@@ -272,11 +303,8 @@ const HomePage = () => {
         <div class="table1">
           <a>Private Policy</a>
           <a>Copyright</a>
-
         </div>
-
       </footer>
-
     </div>
   );
 };
