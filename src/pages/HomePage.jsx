@@ -7,7 +7,7 @@ import CountUp from "react-countup";
 const HomePage = () => {
   const [vision, setVision] = useState(false)
   return (
-    <div>
+    <div className ="section">
       <h2>THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
       <img src="" alt="IMAGE OF THE CAPITAL AND CHERRY BLOSSOMS" />
       <h3>WHO WE ARE</h3>
