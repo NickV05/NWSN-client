@@ -6,6 +6,7 @@ import SignupPage from './pages/SignupPage'
 import LoginPage from './pages/LoginPage'
 import Partnership from './pages/Partnership';
 import Footer from './components/Footer';
+import Membership from './pages/Membership';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
 
         <Route path ="/" element={<HomePage/>}/>
         <Route path ="/partnership" element={<Partnership/>}/>
+        <Route path ="/membership" element={<Membership/>}/>
 
         </Route>
 

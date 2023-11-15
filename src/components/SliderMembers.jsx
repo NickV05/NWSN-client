@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {get} from "../services/authService"
 
-const Slider2 = () => {
+const SliderMembers = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sponsors, setSponsors] = useState([]);
 
@@ -24,7 +24,7 @@ const Slider2 = () => {
     if (sponsors.length) {
       const intervalId = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % (sponsors.length / 4));
-      }, 5500);
+      }, 4000);
 
       return () => clearInterval(intervalId); 
     }
@@ -53,4 +53,4 @@ const Slider2 = () => {
   );
 };
 
-export default Slider2;
+export default SliderMembers;

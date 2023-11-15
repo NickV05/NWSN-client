@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {get} from "../services/authService"
 
 const Slider1 = () => {
@@ -29,10 +29,6 @@ const Slider1 = () => {
       return () => clearInterval(intervalId); 
     }
   }, [sponsors]);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (sponsors.length / 2));
-  };
 
   return (
     <div className="carousel-container">

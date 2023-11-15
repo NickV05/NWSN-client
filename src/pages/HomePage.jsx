@@ -261,7 +261,7 @@ const HomePage = () => {
       </p>
 
       <div class="table1">
-        <Link>Become A Member Today!</Link>
+        <Link to="/membership"><button>Become A Member Today!</button></Link>
         <Link>Donate To Make A Difference Today!</Link>
       </div>
 

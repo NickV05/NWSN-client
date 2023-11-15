@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom"
+import { useContext } from "react";
+import { AuthContext } from "../context/auth.context";
+
 const Footer = () => {
+  const { user } = useContext(AuthContext);
   return (
-    <footer class="table2">
+    <>
+    {user && <footer class="table2">
         <div class="table1">
           <form class="table2">
             <h5>SIGN UP FOR OUR NEWSLETTER</h5>
@@ -40,7 +45,8 @@ const Footer = () => {
           <a>Private Policy</a>
           <a>Copyright</a>
         </div>
-      </footer>
+      </footer>}
+      </>
   )
 }
 
