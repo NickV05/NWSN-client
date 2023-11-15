@@ -230,7 +230,7 @@ const HomePage = () => {
         their treasure, time, expertise, services and resources with the NWSN
         and its members.
       </p>
-      <button>Become Our Partner and Provider</button>
+      <Link to="/partnership"><button>Become Our Partner and Provider</button></Link>
       <Slider2 />
       <button>Learn More About Our Partners and Providers</button>
       <h4>The NWSN Thanks Its Partners and Providers In Shared Mission!</h4>
@@ -265,46 +265,6 @@ const HomePage = () => {
         <Link>Donate To Make A Difference Today!</Link>
       </div>
 
-      <footer class="table2">
-        <div class="table1">
-          <form class="table2">
-            <h5>SIGN UP FOR OUR NEWSLETTER</h5>
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">Sign Up</button>
-          </form>
-
-          <div class="table2">
-            <h5>QUICK LINKS</h5>
-            <ul class="table2">
-              <Link>Our Impact</Link>
-              <Link>News & Advocacy Alerts</Link>
-              <Link>About Us</Link>
-              <Link>Get Involved</Link>
-              <Link>Contact Us</Link>
-              <Link>Member Portal</Link>
-              <Link>Donate</Link>
-            </ul>
-          </div>
-
-          <div class="table2">
-            <h5>FOLLOW US</h5>
-            <a>Instagram</a>
-            <a>Facebook</a>
-            <a>Twitter</a>
-          </div>
-        </div>
-
-        <div class="table1">
-          <Link>Official Charity Registration</Link>
-          <Link>Charity Navigator</Link>
-          <Link>Candid</Link>
-        </div>
-
-        <div class="table1">
-          <a>Private Policy</a>
-          <a>Copyright</a>
-        </div>
-      </footer>
     </div>
   );
 };

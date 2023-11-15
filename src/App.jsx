@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import HomePage from './pages/HomePage';
 import SignupPage from './pages/SignupPage'
 import LoginPage from './pages/LoginPage'
+import Partnership from './pages/Partnership';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -29,6 +31,7 @@ function App() {
         <Route element={<LoggedIn />}>
 
         <Route path ="/" element={<HomePage/>}/>
+        <Route path ="/partnership" element={<Partnership/>}/>
 
         </Route>
 
@@ -42,6 +45,7 @@ function App() {
 
       </Routes>
 
+      <Footer/>
 
     </div>
   )
