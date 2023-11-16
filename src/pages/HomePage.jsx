@@ -5,9 +5,9 @@ import { useState } from "react";
 import CountUp from "react-countup";
 
 const HomePage = () => {
-  const [vision, setVision] = useState(false)
+  const [vision, setVision] = useState(false);
   return (
-    <div className ="section">
+    <div className="section">
       <h2>THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
       <img src="" alt="IMAGE OF THE CAPITAL AND CHERRY BLOSSOMS" />
       <h3>WHO WE ARE</h3>
@@ -164,44 +164,77 @@ const HomePage = () => {
       <div class="table2">
         <div class="table1">
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={178885} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp
+                enableScrollSpy
+                delay={0.6}
+                end={178885}
+                duration={2.2}
+              />{" "}
+              +
+            </h2>
             <h2>BED NIGHTS ANNUALLY</h2>
           </div>
 
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={348096} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp
+                enableScrollSpy
+                delay={0.6}
+                end={348096}
+                duration={2.2}
+              />{" "}
+              +
+            </h2>
             <h2>NOURISHING MEALS SERVED ANNUALLY</h2>
           </div>
 
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={15391} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp enableScrollSpy delay={0.6} end={15391} duration={2.2} />{" "}
+              +
+            </h2>
             <h2>WOMEN AND CHILDREN SHELTERED OR HOUSED ANNUALLY</h2>
           </div>
 
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={13948} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp enableScrollSpy delay={0.6} end={13948} duration={2.2} />{" "}
+              +
+            </h2>
             <h2> COUNSELING SESSIONS ANNUALLY</h2>
           </div>
         </div>
 
         <div class="table1">
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={758} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp enableScrollSpy delay={0.6} end={758} duration={2.2} /> +
+            </h2>
             <h2>EMPLOYMENT ASSISTANCE AND TRAINING PROVIDED</h2>
           </div>
 
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={1151} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp enableScrollSpy delay={0.6} end={1151} duration={2.2} />{" "}
+              +
+            </h2>
             <h2> ARTS AND ENRICHMENT ACTIVITIES HOSTED</h2>
           </div>
 
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2} />{" "}
+              +
+            </h2>
             <h2>LIVES CHANGED</h2>
           </div>
 
           <div>
-          <h2><CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2}/> +</h2>
+            <h2>
+              <CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2} />{" "}
+              +
+            </h2>
             <h2>EDUCATIONAL SUPPORTS FOR ALL AGES</h2>
           </div>
         </div>
@@ -217,7 +250,7 @@ const HomePage = () => {
       <h3>THE OFFICIAL SPONSORS OF THE NWSN MAKE ALL WE DO POSSIBLE!</h3>
       <h4>Powering the NWSN, Powering Change for Safer, Brighter Futures</h4>
       <button>Become An Official Sponsor</button>
-      <Slider1/>
+      <Slider1 />
       <button>Learn More About Our Sponsors</button>
       <h4>
         The NWSN Thanks Its Generous Sponsors for Making All We Do Possible!
@@ -230,7 +263,9 @@ const HomePage = () => {
         their treasure, time, expertise, services and resources with the NWSN
         and its members.
       </p>
-      <Link to="/partnership"><button>Become Our Partner and Provider</button></Link>
+      <Link to="/partnership">
+        <button>Become Our Partner and Provider</button>
+      </Link>
       <Slider2 />
       <button>Learn More About Our Partners and Providers</button>
       <h4>The NWSN Thanks Its Partners and Providers In Shared Mission!</h4>
@@ -261,10 +296,11 @@ const HomePage = () => {
       </p>
 
       <div class="table1">
-        <Link to="/membership"><button>Become A Member Today!</button></Link>
+        <Link to="/membership">
+          <button>Become A Member Today!</button>
+        </Link>
         <Link>Donate To Make A Difference Today!</Link>
       </div>
-
     </div>
   );
 };

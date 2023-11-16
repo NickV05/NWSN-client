@@ -28,7 +28,7 @@ const LoginPage = () => {
   };
 
   return (
-    <section className ="section">
+    <section className="section">
       <div>
         <div>
           <form onSubmit={handleLoginSubmit}>

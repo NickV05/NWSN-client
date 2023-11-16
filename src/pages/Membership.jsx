@@ -194,20 +194,19 @@ const Membership = () => {
 
       <h3>Hear from Our Members~ </h3>
 
-     <SliderMembers/>
+      <SliderMembers />
 
-     <h2>JOIN US TODAY!</h2>
+      <h2>JOIN US TODAY!</h2>
 
-     <div className="table1">
+      <div className="table1">
         <Link>Regular Membership Application</Link>
         <Link>
           Local/State/Regional/National Association, Network or Coalition
           Membership Application
         </Link>
       </div>
-
     </section>
   );
-}
+};
 
-export default Membership
+export default Membership;

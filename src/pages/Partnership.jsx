@@ -1,5 +1,3 @@
-
-
 const Partnership = () => {
   return (
     <section className="section">
@@ -97,4 +95,4 @@ const Partnership = () => {
   );
 };
 
-export default Partnership
+export default Partnership;
