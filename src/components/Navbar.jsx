@@ -105,7 +105,7 @@ const Navbar = () => {
           </div>
 
           <div className="menu2">
-            <Link to="/">Home</Link>
+            <Link to="/home/:start">Home</Link>
 
             <div>
               <button

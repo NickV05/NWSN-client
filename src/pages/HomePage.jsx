@@ -1,16 +1,29 @@
 import { Link } from "react-router-dom";
 import Slider1 from "../components/Slider1";
 import Slider2 from "../components/Slider2";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import CountUp from "react-countup";
+import { useParams } from 'react-router-dom';
 
 const HomePage = () => {
   const [vision, setVision] = useState(false);
+  const { targetElementId } = useParams();
+  const targetElementRef = useRef(null);
+
+  useEffect(() => {
+    if (targetElementId) {
+      const targetElement = document.getElementById(targetElementId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [targetElementId]);
   return (
     <div className="section">
-      <h2>THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
+      <h2 >THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
       <img src="" alt="IMAGE OF THE CAPITAL AND CHERRY BLOSSOMS" />
-      <h3>WHO WE ARE</h3>
+      <h3 id="start">WHO WE ARE</h3>
       <h4>Shelters and Safe Havens United For Women and Children</h4>
       <p>
         The National Women’s Shelter Network is a growing network of women’s and
@@ -194,7 +207,7 @@ const HomePage = () => {
               <CountUp enableScrollSpy delay={0.6} end={15391} duration={2.2} />{" "}
               +
             </h2>
-            <h2>WOMEN AND CHILDREN SHELTERED OR HOUSED ANNUALLY</h2>
+            <h2 >WOMEN AND CHILDREN SHELTERED OR HOUSED ANNUALLY</h2>
           </div>
 
           <div>
@@ -227,7 +240,7 @@ const HomePage = () => {
               <CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2} />{" "}
               +
             </h2>
-            <h2>LIVES CHANGED</h2>
+            <h2 id="NWSN" ref={targetElementRef}>LIVES CHANGED</h2>
           </div>
 
           <div>
