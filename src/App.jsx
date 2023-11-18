@@ -42,7 +42,7 @@ function App() {
     <Routes>      
         <Route element={<LoggedIn />}>
 
-        <Route path ="/home/:targetElementId" element={<HomePage/>}/>
+        <Route path ="/" element={<HomePage/>}/>
         <Route path ="/partnership" element={<Partnership/>}/>
         <Route path ="/membership" element={<Membership/>}/>
         <Route path ="/news" element={<NewsPage/>}/>

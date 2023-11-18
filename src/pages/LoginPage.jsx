@@ -19,7 +19,7 @@ const LoginPage = () => {
       .then((response) => {
         storeToken(response.data.authToken);
         authenticateUser();
-        navigate("/home/:start");
+        navigate("/");
       })
       .catch((error) => {
         const errorDescription = error.response.data.message;

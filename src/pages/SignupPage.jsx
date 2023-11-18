@@ -24,7 +24,7 @@ const SignupPage = () => {
       .then((response) => {
         storeToken(response.data.authToken);
         authenticateUser();
-        navigate("/home/:start");
+        navigate("/");
       })
       .catch((error) => {
         console.log("Error", error);

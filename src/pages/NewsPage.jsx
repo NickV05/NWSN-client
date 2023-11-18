@@ -10,8 +10,8 @@ const NewsPage = () => {
       </video>
 
       <div className="table1">
-        <Link to="/home/NWSN">NWSN HISTORY</Link>
-        <Link to="/home/NWSN">ABOUT US</Link>
+        <Link to="/">NWSN HISTORY</Link>
+        <Link to="/">ABOUT US</Link>
         <Link>INFOGRAPHICS AND REPORTS</Link>
       </div>
 
