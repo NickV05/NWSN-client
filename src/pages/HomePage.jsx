@@ -1,24 +1,12 @@
 import { Link } from "react-router-dom";
 import Slider1 from "../components/Slider1";
 import Slider2 from "../components/Slider2";
-import { useState, useRef, useEffect } from "react";
 import CountUp from "react-countup";
-import { useParams } from 'react-router-dom';
+import { useState } from "react";
 
 const HomePage = () => {
   const [vision, setVision] = useState(false);
-  const { targetElementId } = useParams();
-  const targetElementRef = useRef(null);
 
-  useEffect(() => {
-    if (targetElementId) {
-      const targetElement = document.getElementById(targetElementId);
-
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [targetElementId]);
   return (
     <div className="section">
       <h2 >THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
@@ -240,7 +228,7 @@ const HomePage = () => {
               <CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2} />{" "}
               +
             </h2>
-            <h2 id="NWSN" ref={targetElementRef}>LIVES CHANGED</h2>
+            <h2>LIVES CHANGED</h2>
           </div>
 
           <div>

@@ -187,7 +187,7 @@ const Navbar = () => {
               </button>
               {isMenuOpen4 && (
                 <div className="drop-down">
-                  <Link>The NWSN</Link>
+                  <Link to ="/about/:NWSN">The NWSN</Link>
                   <Link>Mission</Link>
                   <Link>Vision</Link>
                   <Link>History</Link>

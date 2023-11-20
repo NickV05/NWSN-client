@@ -8,6 +8,7 @@ import Partnership from './pages/Partnership';
 import Footer from './components/Footer';
 import Membership from './pages/Membership';
 import NewsPage from './pages/NewsPage';
+import AboutUsPage from './pages/AboutUsPage';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route path ="/partnership" element={<Partnership/>}/>
         <Route path ="/membership" element={<Membership/>}/>
         <Route path ="/news" element={<NewsPage/>}/>
+        <Route path ="/about/:tag" element={<AboutUsPage/>}/>
 
         </Route>
 
