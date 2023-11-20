@@ -1,16 +1,36 @@
 import { Link } from "react-router-dom"
-import { useContext } from "react";
+import { useState,useContext } from "react";
 import { AuthContext } from "../context/auth.context";
+import { post } from "../services/authService";
 
 const Footer = () => {
   const { user } = useContext(AuthContext);
+  const [email, setEmail] =useState("");
+  const subscribe =(e) => {
+    e.preventDefault();
+    post("/home/subscribe", email)
+    .then((response) => {
+      console.log("RESPONSE ===>", response.data)
+      if(!response.data.message){
+        setEmail();
+      }
+      else{
+        alert(response.data.message);
+      }
+    })
+  }
+
+  const handleEmailChange = (e) => {
+    setEmail({ email: e.target.value });
+    console.log("Email ==>", email)
+  };
   return (
     <>
     {user && <footer class="table2">
         <div class="table1">
-          <form class="table2">
+          <form onSubmit={subscribe} class="table2">
             <h5>SIGN UP FOR OUR NEWSLETTER</h5>
-            <input type="text" placeholder="Enter email" />
+            <input onChange={handleEmailChange} value={email? email.email : ""} type="text" placeholder="Enter email" />
             <button type="submit">Sign Up</button>
           </form>
 

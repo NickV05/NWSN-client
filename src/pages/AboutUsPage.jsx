@@ -311,7 +311,7 @@ const AboutUsPage = () => {
         of our Network members. The Advisory Board includes:
       </p>
 
-      <div clssName="table2">
+      <div className="table2">
         <div className="table2">
           <p>Name</p>
           <p>Alumna</p>
