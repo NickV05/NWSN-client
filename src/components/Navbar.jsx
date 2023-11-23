@@ -171,8 +171,8 @@ const Navbar = () => {
               </button>
               {isMenuOpen3 && (
                 <div className="drop-down">
-                  <Link>Media</Link>
-                  <Link>Press Kit</Link>
+                  <Link to="/news/:media">Media</Link>
+                  <Link to="/news/:press">Press Kit</Link>
                 </div>
               )}
             </div>
@@ -188,10 +188,10 @@ const Navbar = () => {
               {isMenuOpen4 && (
                 <div className="drop-down">
                   <Link to ="/about/:NWSN">The NWSN</Link>
-                  <Link>Mission</Link>
-                  <Link>Vision</Link>
-                  <Link>History</Link>
-                  <Link>Leaders</Link>
+                  <Link to="/about/:mission">Mission</Link>
+                  <Link to="/about/:vision">Vision</Link>
+                  <Link to="/about/:history">History</Link>
+                  <Link to="/about/:leaders">Leaders</Link>
                   <Link>Our Members</Link>
                   <Link>Our Official Sponsors</Link>
                   <Link>Our Partners and Providers</Link>

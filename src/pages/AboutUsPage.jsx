@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 const AboutUsPage = () => {
   const { targetElementId } = useParams();
   const targetElementRef = useRef(null);
@@ -15,14 +16,14 @@ const AboutUsPage = () => {
   }, [targetElementId]);
   return (
     <section className="section">
-      <h2>ABOUT US</h2>
+      <h2 id="NWSN" ref={targetElementRef}>ABOUT US</h2>
 
       <h2>THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
       <h4>Shelters and Safe Havens United for Women and Children</h4>
 
       <div className="table2">
         <div>
-          <h3 id="NWSN" ref={targetElementRef}>
+          <h3 id="history" ref={targetElementRef}>
             OUR HISTORY
           </h3>
           <p>
@@ -61,19 +62,9 @@ const AboutUsPage = () => {
           Your browser does not support the video tag.
         </video>
 
-        <div>
-          <h3>OUR VISION</h3>
-          <p>
-            A world of racial, social and gender equity, free of violence
-            against women and children, where every woman and child will have a
-            safe home and in times of transition, a trauma informed shelter and
-            safe havens with deep protective factors, to assure they can heal,
-            grow, thrive and blossom into who they are meant to be.{" "}
-          </p>
-        </div>
 
         <div>
-          <h3>OUR MISSION</h3>
+          <h3 id="mission" ref={targetElementRef}>OUR MISSION</h3>
           <p>
             Our mission is to advance the status of women and children
             experiencing homelessness in our country, and the women’s shelters
@@ -101,6 +92,17 @@ const AboutUsPage = () => {
             to end and prevent homelessness. We recognize that the solutions to
             ending homelessness are founded on equity for women and their
             children, and an engine of social and economic prosperity for all.
+          </p>
+        </div>
+
+        <div>
+          <h3 id="vision" ref={targetElementRef}>OUR VISION</h3>
+          <p>
+            A world of racial, social and gender equity, free of violence
+            against women and children, where every woman and child will have a
+            safe home and in times of transition, a trauma informed shelter and
+            safe havens with deep protective factors, to assure they can heal,
+            grow, thrive and blossom into who they are meant to be.{" "}
           </p>
         </div>
 
@@ -139,7 +141,7 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <h3>Our Leaders</h3>
+      <h3 id="leaders" ref={targetElementRef}>Our Leaders</h3>
       <p>
         The leaders of the National Women’s Shelter Network are a group of all
         volunteer, dedicated and passionate leaders of women’s shelter and safe
@@ -473,6 +475,10 @@ const AboutUsPage = () => {
           </p>
         </div>
       </div>
+
+      <Link to="/membership">
+          <button>Become A Member Today!</button>
+        </Link>
     </section>
   );
 };

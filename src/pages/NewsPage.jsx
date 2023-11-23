@@ -1,9 +1,23 @@
 import { Link } from "react-router-dom"
+import { useRef, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const NewsPage = () => {
+  const { targetElementId } = useParams();
+  const targetElementRef = useRef(null);
+
+  useEffect(() => {
+    if (targetElementId) {
+      const targetElement = document.getElementById(targetElementId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [targetElementId]);
 
   return (
-    <div>
+    <div className="section">
       <video width="640" height="360" controls>
         <source src="your-video-file.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -39,7 +53,7 @@ const NewsPage = () => {
         Officials and the NWSN continues. Stay tuned for more!
       </p>
 
-      <div className="table2">
+      <div className="table2" id="media" ref={targetElementRef}>
         <div className="table1">
           <img scr="" alt="image of photo gallery" />
           <img scr="" alt="image of photo gallery" />
@@ -57,15 +71,15 @@ const NewsPage = () => {
 
       <h2>PRESS RELEASES AND MEDIA COVERAGE</h2>
 
-      <div>
+      <div className ="table2" id="press" ref={targetElementRef}>
         <p>Media Press Release (seven steps action plan, well, eight now.</p>
-      </div>
       <a href="https://www.axios.com/local/miami/2023/09/07/national-womens-shelter-network-conference-miami" target="blank">AXIOS MIAMI</a>
       <a href="https://www.local10.com/news/local/2023/09/06/superstar-gloria-estefan-joins-national-movement-to-combat-homelessness-among-women-and-children/#:~:text=MIAMI%20%E2%80%93%20Leaders%20from%20women%27s%20shelters,said%20superstar%20singer%20Gloria%20Estefan" target="blank">ABC LOCAL 10</a>
       <a href="https://worldredeye.com/2023/09/the-national-womens-shelter-network-conference-press-conference/" target="blank">WORLD RED EYE</a>
       <a href="https://www.infobae.com/america/agencias/2023/09/06/gloria-estefan-se-une-a-pedido-de-atacar-la-crisis-sanitaria-de-los-sin-techo-en-eeuu/" target="blank">INFOBAE</a>
       <a href="https://es-us.noticias.yahoo.com/gloria-estefan-une-pedido-atacar-213743801.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAKzXrKmHVXFqlPowWDs0ltu2-jsPpUa2tZ225b75qHjacCJPXLc6SULfBjtqN9Oznt9ksuHoDCvNQghesZ2Q0q1_76DXu9p3ZcQ1gY_fZcnhcxv7ot9jpRGU6V102L7Hap5oYvSf-q961LS2mIYpw6xoItWNLv0YS1-1rI8K7MuW&guccounter=2" target="blank">AGENCIA EFE</a>
       <a href="https://www.msn.com/es-us/noticias/mundo/gloria-estefan-se-une-al-pedido-de-atacar-la-crisis-sanitaria-de-los-sin-techo-en-ee-uu/ar-AA1glnmo" target="blank">MSN</a>
+      </div>
     </div>
   );
 }

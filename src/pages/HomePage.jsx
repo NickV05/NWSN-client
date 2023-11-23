@@ -36,16 +36,18 @@ const HomePage = () => {
         homelessness. You can make a difference!
       </p>
 
+      
+
       <div>
-        {vision ? (
+        {!vision ? (
           <div>
-            <button disabled={true}>Vision</button>
+            <button disabled={true}>Mission</button>
             <button
               onClick={() => {
                 setVision(!vision);
               }}
             >
-              Mission
+              Vision
             </button>
           </div>
         ) : (
@@ -55,9 +57,9 @@ const HomePage = () => {
                 setVision(!vision);
               }}
             >
-              Vision
+             Mission
             </button>
-            <button disabled={true}>Mission</button>
+            <button disabled={true}>Vision</button>
           </div>
         )}
 
