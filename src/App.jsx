@@ -10,6 +10,9 @@ import Membership from './pages/Membership';
 import NewsPage from './pages/NewsPage';
 import AboutUsPage from './pages/AboutUsPage';
 import { useState, useEffect } from 'react';
+import Sponsor from './pages/Sponsor';
+import Partner from './pages/Partner';
+import Financials from './pages/Financials';
 
 function App() {
 
@@ -48,6 +51,9 @@ function App() {
         <Route path ="/membership" element={<Membership/>}/>
         <Route path ="/news/:tag" element={<NewsPage/>}/>
         <Route path ="/about/:tag" element={<AboutUsPage/>}/>
+        <Route path ="/sponsor" element={<Sponsor/>}/>
+        <Route path ="/partner" element={<Partner/>}/>
+        <Route path ="/financials" element={<Financials/>}/>
 
         </Route>
 
