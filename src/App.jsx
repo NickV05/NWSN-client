@@ -13,6 +13,8 @@ import { useState, useEffect } from 'react';
 import Sponsor from './pages/Sponsor';
 import Partner from './pages/Partner';
 import Financials from './pages/Financials';
+import MembersPortal from './pages/MembersPortal';
+import Library from './pages/Library';
 
 function App() {
 
@@ -34,6 +36,8 @@ function App() {
     return !getToken() ? <Outlet /> : <Navigate to='/' />
   }
 
+
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -54,6 +58,9 @@ function App() {
         <Route path ="/sponsor" element={<Sponsor/>}/>
         <Route path ="/partner" element={<Partner/>}/>
         <Route path ="/financials" element={<Financials/>}/>
+        <Route path ="/portal/:id" element={<MembersPortal/>}/>
+        <Route path ="/library" element={<Library/>}/>
+
 
         </Route>
 

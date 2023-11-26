@@ -29,7 +29,7 @@ function AuthProvider({ children }) {
       .then((response) => {
 
         const user = response.data;
-      
+        console.log(response.data)
         setIsLoggedIn(true);
         setIsLoading(false);
         setUser(user);        
