@@ -18,122 +18,96 @@ const Partner = () => {
       <button>Become Our Partner and Provider</button>
 
       <div className="table2">
+        <div className="table1">
+          <h5>ACADEMIC & SERVICE DRIVEN RESEARCH</h5>
+          <Link>
+            Center for Children and Families, Florida International University
+          </Link>
+          <Link>Human Rights Clinic, University of Miami</Link>
+          <Link>Behavioral Services Research Institute</Link>
+        </div>
 
-      <div className="table1">
+        <div className="table1">
+          <h5>CIVIC & PHILANTHROPIC</h5>
+          <Link>Partner Logo and Link to Page</Link>
+          <Link>Partner Logo and Link to Page</Link>
+          <Link>Partner Logo and Link to Page</Link>
+        </div>
 
-      <h5>ACADEMIC & SERVICE DRIVEN RESEARCH</h5>
-      <Link>Center for Children and Families, Florida International University</Link>
-      <Link>Human Rights Clinic, University of Miami</Link>
-      <Link>Behavioral Services Research Institute</Link>
+        <div className="table1">
+          <h5>CONSULTING SERVICES - Free & Discounted</h5>
+          <Link>Partner Logo and Link to Page</Link>
+          <Link>Partner Logo and Link to Page</Link>
+          <Link>Partner Logo and Link to Page</Link>
+        </div>
 
-      </div>
+        <div className="table1">
+          <h5>CORPORATE</h5>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+        </div>
 
-      <div className="table1">
+        <div className="table1">
+          <h5>FINANCIAL</h5>
+          <Link>US Bank, Sponsor logo & link to page</Link>
+          <Link></Link>
+          <Link></Link>
+        </div>
 
-      <h5>CIVIC &
-PHILANTHROPIC
-</h5>
-      <Link>Partner Logo and Link to Page</Link>
-      <Link>Partner Logo and Link to Page</Link>
-      <Link>Partner Logo and Link to Page</Link>
+        <div className="table1">
+          <h5>GOVERNMENT</h5>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+        </div>
 
-      </div>
+        <div className="table1">
+          <h5>GOODS & SUPPLIES - Discounted</h5>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+        </div>
 
-      <div className="table1">
+        <div className="table1">
+          <h5>GOODS & SUPPLIES - Donated/Free</h5>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+        </div>
 
-      <h5>CONSULTING SERVICES - Free & Discounted</h5>
-      <Link>Partner Logo and Link to Page</Link>
-      <Link>Partner Logo and Link to Page</Link>
-      <Link>Partner Logo and Link to Page</Link>
+        <div className="table1">
+          <h5>INSURANCE</h5>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+        </div>
 
-      </div>
+        <div className="table1">
+          <h5>LEGAL</h5>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+        </div>
 
-      <div className="table1">
-
-      <h5>CORPORATE</h5>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-
-      </div>
-
-      <div className="table1">
-
-      <h5>FINANCIAL
-</h5>
-      <Link>US Bank,
-Sponsor logo & link to page
-</Link>
-      <Link></Link>
-      <Link></Link>
-
-      </div>
-
-      <div className="table1">
-
-      <h5>GOVERNMENT</h5>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-
-      </div>
-
-      <div className="table1">
-
-      <h5>GOODS & SUPPLIES - Discounted</h5>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-
-      </div>
-
-      <div className="table1">
-
-      <h5>GOODS & SUPPLIES - Donated/Free</h5>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-
-      </div>
-
-      <div className="table1">
-
-      <h5>INSURANCE</h5>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-
-      </div>
-
-      <div className="table1">
-
-      <h5>LEGAL</h5>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-
-      </div>
-
-      <div className="table1">
-
-      <h5>OTHER</h5>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-      <Link>Partner logo & link to page</Link>
-
-      </div>
+        <div className="table1">
+          <h5>OTHER</h5>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+          <Link>Partner logo & link to page</Link>
+        </div>
       </div>
 
       <button>Become Our Partner and Provider</button>
 
-      <h4>The NWSN Thanks Its Generous Sponsors for Making All We Do Possible!</h4>
+      <h4>
+        The NWSN Thanks Its Generous Sponsors for Making All We Do Possible!
+      </h4>
       <div className="table1">
-      <Link>Candid</Link>
-      <Link>Charity Navigator</Link>
-      <Link>Charity Solicitation Registration</Link>
-
+        <Link>Candid</Link>
+        <Link>Charity Navigator</Link>
+        <Link>Charity Solicitation Registration</Link>
       </div>
-
     </section>
   );
 };

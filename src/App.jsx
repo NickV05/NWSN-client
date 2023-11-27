@@ -15,6 +15,8 @@ import Partner from './pages/Partner';
 import Financials from './pages/Financials';
 import MembersPortal from './pages/MembersPortal';
 import Library from './pages/Library';
+import OurMembers from './pages/OurMembers';
+import Funding from './pages/Funding';
 
 function App() {
 
@@ -60,7 +62,8 @@ function App() {
         <Route path ="/financials" element={<Financials/>}/>
         <Route path ="/portal/:id" element={<MembersPortal/>}/>
         <Route path ="/library" element={<Library/>}/>
-
+        <Route path ="/members" element={<OurMembers/>}/>
+        <Route path ="/funding" element={<Funding/>}/>
 
         </Route>
 
