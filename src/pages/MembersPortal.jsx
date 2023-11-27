@@ -71,64 +71,73 @@ const MembersPortal = () => {
       </p>
       <h4>Quick Links</h4>
       <div className="table2">
+        <div className="table1">
+          <Link>
+            Comprehensive Resource Library & Sample Policies and Procedures Bank
+          </Link>
+          <Link>Information Sharing, Education & Training</Link>
+          <Link>Shared Community & Shared Learning In The Network</Link>
+          <Link>Resources & Funding Opportunities</Link>
+          <Link>National Conference & Discounted Registration</Link>
+        </div>
 
-      <div className="table1">
-      <Link>Comprehensive Resource Library
-&
-Sample Policies and Procedures Bank
-</Link>
-      <Link>Information Sharing, Education & Training</Link>
-      <Link>Shared Community & Shared Learning 
-In The Network
-</Link>
-      <Link>Resources & Funding Opportunities</Link>
-      <Link>National Conference
-&
-Discounted Registration
-</Link>
+        <div className="table1">
+          <Link>
+            Access Research: Homelessness; Root Causes; Gender-Based Violence &
+            Trauma; Solutions
+          </Link>
+          <Link>
+            Tools & Trainings to Build Organizational Infrastructure & Capacity
+          </Link>
+          <Link>
+            The Network Forum: Connect & Learn With Other Members Who Understand
+            Your Challenges
+          </Link>
+          <Link>
+            Access Free/Discounted Supplies & Services From Our Partners In
+            Shared Mission
+          </Link>
+          <Link>
+            Discover the Power of Our Collective Voices & Advocacy for More
+            Resources
+          </Link>
+        </div>
+
+        <div className="table1">
+          <Link>
+            National Gaps and Needs Survey Report & The Women’s Equity Project
+          </Link>
+          <Link>Advance Evidence Based & Informed Best Practices</Link>
+          <Link>
+            Find Effective Strategies and Supportive Services Needed for
+            Successful Transitions
+          </Link>
+          <Link>
+            Connect with Consultants Willing to Answer Questions and Guide Your
+            Planning
+          </Link>
+          <Link>
+            Advance Public & Social Policies to End and Prevent Homelessness
+          </Link>
+        </div>
+
+        <div className="table1">
+          <Link>Infographics & Reports</Link>
+          <Link>
+            Learn From Ground Breaking Research on Needs of Sheltered Children
+            and Therapeutic Interventions
+          </Link>
+          <Link>Discover the Latest Innovations Across the Country</Link>
+          <Link>Discover our Preferred Providers List</Link>
+          <Link>Regular News, Advocacy & Funding Alerts</Link>
+        </div>
       </div>
 
-      <div className="table1">
-      <Link>Access Research:  Homelessness; Root Causes; Gender-Based Violence & Trauma; Solutions</Link>
-      <Link>Tools & Trainings to Build Organizational Infrastructure & Capacity</Link>
-      <Link>The Network Forum: 
-Connect & Learn With Other Members Who Understand Your Challenges
-</Link>
-      <Link>Access Free/Discounted 
-Supplies & Services From Our Partners In Shared Mission
-</Link>
-      <Link>Discover the Power of Our Collective Voices &
-Advocacy for More Resources
-</Link>
-      </div>
-
-      <div className="table1">
-      <Link>National Gaps and Needs Survey Report &
-The Women’s Equity Project
-</Link>
-      <Link>Advance Evidence Based & Informed 
-Best Practices
-</Link>
-      <Link>Find Effective Strategies and Supportive Services Needed for  Successful Transitions</Link>
-      <Link>Connect with Consultants Willing to Answer Questions and Guide Your Planning</Link>
-      <Link>Advance Public & Social Policies to End and Prevent Homelessness</Link>
-      </div>
-
-      <div className="table1">
-      <Link>Infographics & Reports</Link>
-      <Link>Learn From Ground Breaking Research on Needs of Sheltered Children and Therapeutic Interventions</Link>
-      <Link>Discover the Latest Innovations Across the Country</Link>
-      <Link>Discover our Preferred Providers List</Link>
-      <Link>Regular News, Advocacy & Funding Alerts</Link>
-      </div>
-
-      </div>
-
-      <h5><Link>Still Have Questions or Otherwise Need Help? Contact Us</Link></h5>
-      
-
+      <h5>
+        <Link>Still Have Questions or Otherwise Need Help? Contact Us</Link>
+      </h5>
     </section>
   );
-}
+};
 
-export default MembersPortal
+export default MembersPortal;

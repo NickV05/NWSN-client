@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className="section">
       <h2 >THE NATIONAL WOMEN’S SHELTER NETWORK</h2>
-      <img src="" alt="IMAGE OF THE CAPITAL AND CHERRY BLOSSOMS" />
+      <img src="/cherryblossom.jpg" alt="IMAGE OF THE CAPITAL AND CHERRY BLOSSOMS" />
       <h3 id="start">WHO WE ARE</h3>
       <h4>Shelters and Safe Havens United For Women and Children</h4>
       <p>
@@ -108,7 +108,7 @@ const HomePage = () => {
         </div>
 
         <div class="table2">
-          <Link>
+          <Link to="/membership">
             <h5>Become a Member</h5>
           </Link>
         </div>
@@ -247,14 +247,14 @@ const HomePage = () => {
       <div class="table2">
         <img src="" alt="map" />
         <Link>Looking for an NWSN Member Near You?</Link>
-        <Link>Join the NWSN And Discover the Benefits of Membership Today</Link>
+        <Link to="/membership">Join the NWSN And Discover the Benefits of Membership Today</Link>
       </div>
 
       <h3>THE OFFICIAL SPONSORS OF THE NWSN MAKE ALL WE DO POSSIBLE!</h3>
       <h4>Powering the NWSN, Powering Change for Safer, Brighter Futures</h4>
-      <button>Become An Official Sponsor</button>
+      <Link to="/sponsor"><button>Become An Official Sponsor</button></Link>
       <Slider1 />
-      <button>Learn More About Our Sponsors</button>
+      <Link to="/sponsor"><button>Learn More About Our Sponsors</button></Link>
       <h4>
         The NWSN Thanks Its Generous Sponsors for Making All We Do Possible!
       </h4>
@@ -270,7 +270,9 @@ const HomePage = () => {
         <button>Become Our Partner and Provider</button>
       </Link>
       <Slider2 />
+      <Link to="/partnership">
       <button>Learn More About Our Partners and Providers</button>
+      </Link>
       <h4>The NWSN Thanks Its Partners and Providers In Shared Mission!</h4>
 
       <h3>LATEST NEWS AND ADVOCACY ALERTS</h3>

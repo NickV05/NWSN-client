@@ -39,19 +39,23 @@ const Footer = () => {
             <ul class="table2">
               <Link>Our Impact</Link>
               <Link>News & Advocacy Alerts</Link>
-              <Link>About Us</Link>
+              <Link to="/about/:NWSN">About Us</Link>
               <Link>Get Involved</Link>
               <Link>Contact Us</Link>
-              <Link>Member Portal</Link>
+              {user && user.member ?
+            <button><Link to={`/portal/${user._id}`}>Member Portal</Link></button>:
+            <button disabled="true">Member Portal</button>
+            }
               <Link>Donate</Link>
             </ul>
           </div>
 
           <div class="table2">
             <h5>FOLLOW US</h5>
-            <a>Instagram</a>
-            <a>Facebook</a>
-            <a>Twitter</a>
+            <a href="https://www.instagram.com/thenwsn" target="blank">Instagram</a>
+            <a href="https://www.facebook.com/nationalwomensshelternetwork" target="blank">Facebook</a>
+            <a href="https://twitter.com/thenwsn" target="blank">Twitter</a>
+            <a href="https://www.youtube.com/@thenwsn_org" target="blank">Youtube</a>
           </div>
         </div>
 

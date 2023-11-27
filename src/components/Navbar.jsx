@@ -92,7 +92,10 @@ const Navbar = () => {
       {user && (
         <div className="right-side">
           <div className="menu1">
-            <Link>Members</Link>
+            {user && user.member ?
+            <button><Link to={`/portal/${user._id}`}>Members</Link></button>:
+            <button disabled="true">Members</button>
+            }
             <Link>Donate</Link>
             <button
               onClick={() => {
@@ -130,9 +133,9 @@ const Navbar = () => {
                   <Link>
                     Public Policies Initiatives To End & Prevent Homelessness
                   </Link>
-                  <Link>Resources & Funding Opportunities for Members</Link>
+                  <Link to="/funding">Resources & Funding Opportunities for Members</Link>
                   <Link>Free/Discounted Good & Services for Members</Link>
-                  <Link>Comprehensive Resource Library</Link>
+                  <Link to="/library">Comprehensive Resource Library</Link>
                   <Link>The Women’s Equity Project</Link>
                   <Link>Infographics & Reports</Link>
                 </div>
@@ -151,11 +154,11 @@ const Navbar = () => {
                 <div className="drop-down">
                   <Link>Ways to Support</Link>
                   <Link>Volunteer</Link>
-                  <Link>Become an Official Sponsor</Link>
-                  <Link>Become a Partner and Provider</Link>
+                  <Link to="/sponsor">Become an Official Sponsor</Link>
+                  <Link to="/partner">Become a Partner and Provider</Link>
                   <Link>Give Free/Discounted Goods and Services</Link>
-                  <Link>Partner with us To Provide Grants</Link>
-                  <Link>Become a Member</Link>
+                  <Link to="/partnership">Partner with us To Provide Grants</Link>
+                  <Link to="/membership">Become a Member</Link>
                   <Link>Donate Now</Link>
                 </div>
               )}
@@ -192,10 +195,10 @@ const Navbar = () => {
                   <Link to="/about/:vision">Vision</Link>
                   <Link to="/about/:history">History</Link>
                   <Link to="/about/:leaders">Leaders</Link>
-                  <Link>Our Members</Link>
-                  <Link>Our Official Sponsors</Link>
-                  <Link>Our Partners and Providers</Link>
-                  <Link>Our Financials</Link>
+                  <Link to="/members">Our Members</Link>
+                  <Link to="/sponsor">Our Official Sponsors</Link>
+                  <Link to="/partner">Our Partners and Providers</Link>
+                  <Link to="/financials">Our Financials</Link>
                 </div>
               )}
             </div>

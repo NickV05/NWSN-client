@@ -158,7 +158,7 @@ const AboutUsPage = () => {
         </p>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="" alt="photo"  className="image-container"/>
           <p>
             Constance Collins, constance@thenwsn.org, President and Director –
             National Women’s Shelter Network, and President, Sundari Foundation,
@@ -167,8 +167,8 @@ const AboutUsPage = () => {
           </p>
         </div>
 
-        <div>
-          <img src="" alt="photo" />
+        <div >
+          <img src="/Shakoya Green.jpg" alt="photo" className="image-container" />
           <p>
             Shakoya Green-Long, shakoya@thomashouseshelter.org, Vice President
             and Director- National Women’s Shelter Network, and Chief Executive
@@ -178,7 +178,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Alexis Steel.jpg" alt="photo" className="image-container"/>
           <p>
             Alexis Steel, asteel@stmaryscenterma.org, Treasurer and Director -
             National Women’s Shelter Network, and President – St. Mary’s Center
@@ -187,7 +187,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Patricia Bosman.jpg" alt="photo" className="image-container"/>
           <p>
             Patricia Bosman, pbosman@havenofgracestl.org, Secretary and Director
             - National Women’s Shelter Network, and Executive Director – The
@@ -196,7 +196,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Kenyatta Brunson.jpg" alt="photo" className="image-container"/>
           <p>
             Kenyatta Brunson, KBrunson@nstreetvillage.org, Director - National
             Women’s Shelter Network, and President/Chief Executive Officer – N
@@ -205,7 +205,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Isabella Dell_Oca.JPG" alt="photo" className="image-container"/>
           <p>
             Isabella Dell’Oca, isabella@lotushouse.org, Director - National
             Women’s Shelter Network, and Executive Director - Lotus House
@@ -214,7 +214,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Kimberly Livsey.jpeg" alt="photo" className="image-container"/>
           <p>
             Kimberly Livsey, kimberly.livsey@atlantamission.org, Director -
             National Women’s Shelter Network, and Chief Program Officer –
@@ -223,7 +223,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Lisa Michaelson.JPG" alt="photo" className="image-container"/>
           <p>
             Lisa Michaelson, lmichaelson@ugmtc.org, Director - National Women’s
             Shelter Network, and Vice President Women’s and Children’s Programs
@@ -232,7 +232,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Margaret Mitchell.jpg" alt="photo" className="image-container"/>
           <p>
             Margaret Mitchell, mmitchell@ywca.org, Director - National Women’s
             Shelter Network, and Chief Executive Officer, YWCA USA, Inc.,
@@ -241,7 +241,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Katie O_Brien.jpg" alt="photo" className="image-container"/>
           <p>
             Katie O’Brien, kobrien@rosehaven.org, Director - National Women’s
             Shelter Network, and Executive Director – Rose Haven, Portland,
@@ -250,7 +250,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Alyssa Sanchez.jpg" alt="photo" className="image-container"/>
           <p>
             Alyssa Sanchez, alyssa.sanchez@samaritanvillage.org, Director -
             National Women’s Shelter Network, and Asst. Vice President,
@@ -260,7 +260,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Amy Turk.jpg" alt="photo" className="image-container"/>
           <p>
             Amy Turk, amyt@downtownwomenscenter.org, Director - National Women’s
             Shelter Network, and Chief Executive Officer – Downtown Women’s
@@ -269,7 +269,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Emily Sepulveda Wheeland.jpg" alt="photo" className="image-container"/>
           <p>
             Emily Sepulveda-Wheeland, emily@thedeloresproject.org, Director -
             National Women’s Shelter Network, and Chief Executive Officer – The
@@ -278,7 +278,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Jennifer Hanlon Wignon.jpg" alt="photo" className="image-container"/>
           <p>
             Jennifer Hanlon Wigon, jennifer@womenslunchplace.org, Director -
             National Women’s Shelter Network, and Executive Director – Women’s
@@ -287,7 +287,7 @@ const AboutUsPage = () => {
         </div>
 
         <div>
-          <img src="" alt="photo" />
+          <img src="/Kara Zordel.jpeg" alt="photo" className="image-container"/>
           <p>
             Kara Zordel, kara.zordel@communityforwardsf.org, Director - National
             Women’s Shelter Network, and Chief Executive Officer - Community
@@ -386,7 +386,7 @@ const AboutUsPage = () => {
           </div>
 
           <div className="table2">
-            <img src="" alt="photo" />
+            <img src="/grettel.jpg" alt="photo" />
             <h5>
               Grettel Jiménez-Singer, Director, National Women’s Shelter
               Network, Inc., grettel@thenwsn.org Add Link to bio
@@ -394,7 +394,7 @@ const AboutUsPage = () => {
           </div>
 
           <div className="table2">
-            <img src="" alt="photo" />
+            <img src="/gabriela.jpg" alt="photo" />
             <h5>
               Gabriela Saenz, Research, Policy and Public Education Director,
               National Women’s Shelter Network, Inc., gaby@thenwsn.org Add Link
