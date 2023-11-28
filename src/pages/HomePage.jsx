@@ -96,24 +96,24 @@ const HomePage = () => {
         )}
       </div>
 
-      <div class="table1">
-        <div class="table2">
+      <div className="table1">
+        <div className="table2">
           <h5>Need Help?</h5>
           <Link>Find an NWSN Member near you in our Directory</Link>
         </div>
 
-        <div class="table2">
+        <div className="table2">
           <h5>Get Involved</h5>
           <Link>Learn more about how you can help</Link>
         </div>
 
-        <div class="table2">
+        <div className="table2">
           <Link to="/membership">
             <h5>Become a Member</h5>
           </Link>
         </div>
 
-        <div class="table2">
+        <div className="table2">
           <h5>Donate Now</h5>
           <Link>Help the Network advance the status of women and children</Link>
         </div>
@@ -131,8 +131,8 @@ const HomePage = () => {
         and advocacy.
       </p>
 
-      <div class="table2">
-        <div class="table1">
+      <div className="table2">
+        <div className="table1">
           <Link>
             Supporting Shelters and Safe Havens in Local Communities Across the
             Country
@@ -149,7 +149,7 @@ const HomePage = () => {
           <Link>Building Shared Community</Link>
         </div>
 
-        <div class="table1">
+        <div className="table1">
           <Link>Disaster Relief</Link>
 
           <Link>Public Policy, Infographics & Reports</Link>
@@ -164,8 +164,8 @@ const HomePage = () => {
 
       <h3>THE IMPACT OF OUR NETWORK IN VULNERABLE LIVES TOUCHED</h3>
 
-      <div class="table2">
-        <div class="table1">
+      <div className="table2">
+        <div className="table1">
           <div>
             <h2>
               <CountUp
@@ -209,7 +209,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div class="table1">
+        <div className="table1">
           <div>
             <h2>
               <CountUp enableScrollSpy delay={0.6} end={758} duration={2.2} /> +
@@ -244,7 +244,7 @@ const HomePage = () => {
       </div>
 
       <h3>OUR MEMBERS</h3>
-      <div class="table2">
+      <div className="table2">
         <img src="" alt="map" />
         <Link>Looking for an NWSN Member Near You?</Link>
         <Link to="/membership">Join the NWSN And Discover the Benefits of Membership Today</Link>
@@ -300,7 +300,7 @@ const HomePage = () => {
         Officials and the NWSN continues. Stay tuned for more!
       </p>
 
-      <div class="table1">
+      <div className="table1">
         <Link to="/membership">
           <button>Become A Member Today!</button>
         </Link>

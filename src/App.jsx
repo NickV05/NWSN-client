@@ -17,6 +17,8 @@ import MembersPortal from './pages/MembersPortal';
 import Library from './pages/Library';
 import OurMembers from './pages/OurMembers';
 import Funding from './pages/Funding';
+import MemberForm from './pages/MemberForm';
+import ConfirmationPage from './pages/ConfirmationPage';
 
 function App() {
 
@@ -64,6 +66,8 @@ function App() {
         <Route path ="/library" element={<Library/>}/>
         <Route path ="/members" element={<OurMembers/>}/>
         <Route path ="/funding" element={<Funding/>}/>
+        <Route path ="/memberForm" element={<MemberForm/>}/>
+        <Route path ="/confirmation" element={<ConfirmationPage/>}/>
 
         </Route>
 

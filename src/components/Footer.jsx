@@ -26,17 +26,17 @@ const Footer = () => {
   };
   return (
     <>
-    {user && <footer class="table2">
-        <div class="table1">
-          <form onSubmit={subscribe} class="table2">
+    {user && <footer className="table2">
+        <div className="table1">
+          <form onSubmit={subscribe} className="table2">
             <h5>SIGN UP FOR OUR NEWSLETTER</h5>
             <input onChange={handleEmailChange} value={email? email.email : ""} type="text" placeholder="Enter email" />
             <button type="submit">Sign Up</button>
           </form>
 
-          <div class="table2">
+          <div className="table2">
             <h5>QUICK LINKS</h5>
-            <ul class="table2">
+            <ul className="table2">
               <Link>Our Impact</Link>
               <Link>News & Advocacy Alerts</Link>
               <Link to="/about/:NWSN">About Us</Link>
@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="table2">
+          <div className="table2">
             <h5>FOLLOW US</h5>
             <a href="https://www.instagram.com/thenwsn" target="blank">Instagram</a>
             <a href="https://www.facebook.com/nationalwomensshelternetwork" target="blank">Facebook</a>
@@ -59,13 +59,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="table1">
+        <div className="table1">
           <Link>Official Charity Registration</Link>
           <Link>Charity Navigator</Link>
           <Link>Candid</Link>
         </div>
 
-        <div class="table1">
+        <div className="table1">
           <a>Private Policy</a>
           <a>Copyright</a>
         </div>
