@@ -66,6 +66,10 @@ const MemberForm = () => {
     howManyMembers:'',
   });
 
+  const [name, setName] = useState('');
+  const [files1, setFiles1] = useState([]);
+  const [files2, setFiles2] = useState([]);
+
   const duesData = [
     { range: '0-$250,000', dues: 125, persons: 1 },
     { range: '$250,001-$500,000', dues: 250, persons: 1 },
@@ -78,8 +82,7 @@ const MemberForm = () => {
     { range: '$10,000,001 and Up', dues: 10000, persons: 4 },
   ];
 
-  const [name, setName] = useState('');
-
+  
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
@@ -91,13 +94,24 @@ const MemberForm = () => {
     e.preventDefault();
 
     if (name.length) {
-      if (!captchaValue) {
-        alert('Please complete the reCAPTCHA before submitting.');
-        return;
-      }
+      // if (!captchaValue) {
+      //   alert('Please complete the reCAPTCHA before submitting.');
+      //   return;
+      // }
       console.log('Name:', name);
       console.log('Agreed to terms');
+      const formData = new FormData();
+      formData.append('file', files1);
+
       console.log('Form submitted:', { organizationInfo, mainContactInfo, membershipEligibility });
+      post("/forms/memberForm", {
+        organizationInfo: organizationInfo,
+        mainContactInfo: mainContactInfo,
+        membershipEligibility: membershipEligibility,
+        additionalInfo: additionalInfo,
+        files: formData, 
+
+      })
       navigate("/confirmation");
     } else {
       alert('Please agree to the terms before submitting.');
@@ -872,8 +886,8 @@ const MemberForm = () => {
           Please upload copies of your organization's IRS Form 990 and IRS 501c3
           Determination Letter
         </p>
-        <FileUpload1 />
-        <FileUpload2 />
+        <FileUpload1 files1={files1} setFiles1={setFiles1} />
+        <FileUpload2 files2={files2} setFiles2={setFiles2}/>
 
         <h4>Network Membership Terms</h4>
         <p>

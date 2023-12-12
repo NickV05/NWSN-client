@@ -1,21 +1,18 @@
-import { useState } from 'react';
-
-const FileUpload1 = () => {
-  const [files, setFiles] = useState([]);
+const FileUpload1 = ({files1, setFiles1}) => {
 
   const handleFileChange = (e) => {
     const newFiles = [...e.target.files];
-    setFiles(newFiles);
+    setFiles1(newFiles);
   };
 
   const handleClear = () => {
-    setFiles([]);
+    setFiles1([]);
   };
 
   return (
     <div>
       <div>
-        {files.map((file, index) => (
+        {files1.map((file, index) => (
           <div key={index}>{file.name}</div>
         ))}
       </div>
