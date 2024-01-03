@@ -3,7 +3,7 @@ import { post } from '../services/authService';
 import { useNavigate } from 'react-router-dom';
 import FileUpload1 from '../components/FileUploader1';
 import FileUpload2 from '../components/FileUploader2';
-import ReCAPTCHA from "react-google-recaptcha";
+
 
 const MemberForm = () => {
   const navigate = useNavigate();
@@ -87,39 +87,30 @@ const MemberForm = () => {
     setName(e.target.value);
   };
 
-  const [captchaValue, setCaptchaValue] = useState(null);
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (name.length) {
-      // if (!captchaValue) {
-      //   alert('Please complete the reCAPTCHA before submitting.');
-      //   return;
-      // }
+
       console.log('Name:', name);
       console.log('Agreed to terms');
       const formData = new FormData();
       formData.append('file', files1);
 
-      console.log('Form submitted:', { organizationInfo, mainContactInfo, membershipEligibility });
       post("/forms/memberForm", {
         organizationInfo: organizationInfo,
         mainContactInfo: mainContactInfo,
         membershipEligibility: membershipEligibility,
         additionalInfo: additionalInfo,
         files: formData, 
+        name:name
 
       })
       navigate("/confirmation");
     } else {
       alert('Please agree to the terms before submitting.');
     }
-  };
-
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
   };
 
 
@@ -958,11 +949,6 @@ const MemberForm = () => {
           <input type="text" value={name} onChange={handleNameChange} />
         </label>
         <br />
-
-        <ReCAPTCHA
-          sitekey="6LcN6SApAAAAAJQ50g6aK44wnSs1U_Ccc5VeXPAp" 
-          onChange={handleCaptchaChange}
-        />
 
         <button type="submit">Submit</button>
       </form>

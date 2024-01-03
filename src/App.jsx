@@ -20,6 +20,8 @@ import Funding from "./pages/Funding";
 import MemberForm from "./pages/MemberForm";
 import ConfirmationPage from "./pages/ConfirmationPage";
 import Officers from "./pages/Officers";
+import PartnerForm from "./pages/PartnerForm";
+import VolunteerForm from "./pages/VolunteerForm";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -65,6 +67,8 @@ function App() {
               <Route path="/memberForm" element={<MemberForm />} />
               <Route path="/confirmation" element={<ConfirmationPage />} />
               <Route path="/speakers/:name" element={<Officers />} />
+              <Route path="/partnerForm" element={<PartnerForm/>} />
+              <Route path="/volunteerForm" element={<VolunteerForm/>} />
             </Route>
 
             <Route element={<NotLoggedIn />}>

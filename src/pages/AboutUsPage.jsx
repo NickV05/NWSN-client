@@ -162,8 +162,8 @@ const AboutUsPage = () => {
           <p>
             Constance Collins, constance@thenwsn.org, President and Director –
             National Women’s Shelter Network, and President, Sundari Foundation,
-            Inc. dba Lotus House Women’s Shelter, Miami, Florida. Add Link to
-            bio
+            Inc. dba Lotus House Women’s Shelter, Miami, Florida. <Link to="/speakers/constance">Add Link to
+            bio</Link>
           </p>
         </div>
 
@@ -172,8 +172,8 @@ const AboutUsPage = () => {
           <p>
             Shakoya Green-Long, shakoya@thomashouseshelter.org, Vice President
             and Director- National Women’s Shelter Network, and Chief Executive
-            Officer – Thomas House Family Shelter, Garden Grove, California. Add
-            Link to bio
+            Officer – Thomas House Family Shelter, Garden Grove, California. <Link to="/speakers/:name">Add
+            Link to bio</Link>
           </p>
         </div>
 
@@ -381,7 +381,7 @@ const AboutUsPage = () => {
             <img src="" alt="photo" />
             <h5>
               Constance Collins, Executive Director, National Women’s Shelter
-              Network, Inc., constance@thenwsn.org Add Link to bio
+              Network, Inc., constance@thenwsn.org <Link to="/speakers/constance">Add Link to bio</Link>
             </h5>
           </div>
 
@@ -389,7 +389,7 @@ const AboutUsPage = () => {
             <img src="/grettel.jpg" alt="photo" />
             <h5>
               Grettel Jiménez-Singer, Director, National Women’s Shelter
-              Network, Inc., grettel@thenwsn.org Add Link to bio
+              Network, Inc., grettel@thenwsn.org <Link to="/speakers/grettel">Add Link to bio</Link>
             </h5>
           </div>
 

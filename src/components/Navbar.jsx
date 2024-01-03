@@ -80,10 +80,6 @@ const Navbar = () => {
     setIsMenuOpen4(false);
   };
 
-  const getToken = () => {
-    return localStorage.getItem("authToken");
-  };
-
   return (
     <nav className="navbar">
       <div className="logo-container">
@@ -153,7 +149,7 @@ const Navbar = () => {
               {isMenuOpen2 && (
                 <div className="drop-down">
                   <Link>Ways to Support</Link>
-                  <Link>Volunteer</Link>
+                  <Link to="/volunteerForm">Volunteer</Link>
                   <Link to="/sponsor">Become an Official Sponsor</Link>
                   <Link to="/partner">Become a Partner and Provider</Link>
                   <Link>Give Free/Discounted Goods and Services</Link>

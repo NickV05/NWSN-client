@@ -15,7 +15,7 @@ const Partner = () => {
         want you as a Partner of the NWSN. Learn more and join us in the fight
         to end and prevent homelessness.
       </p>
-      <button>Become Our Partner and Provider</button>
+      <button><Link to="/partnerForm">Become Our Partner and Provider</Link></button>
 
       <div className="table2">
         <div className="table1">
@@ -98,7 +98,7 @@ const Partner = () => {
         </div>
       </div>
 
-      <button>Become Our Partner and Provider</button>
+      <button><Link to="/partnerForm">Become Our Partner and Provider</Link></button>
 
       <h4>
         The NWSN Thanks Its Generous Sponsors for Making All We Do Possible!
