@@ -88,9 +88,12 @@ const Navbar = () => {
       {user && (
         <div className="right-side">
           <div className="menu1">
-            {user && user.member ?
+            {user?.member ?
             <button><Link to={`/portal/${user._id}`}>Members</Link></button>:
             <button disabled="true">Members</button>
+            }
+            {user?.admin &&
+              <button><Link to="adminPortal">Admin Portal</Link></button>
             }
             <Link>Donate</Link>
             <button
