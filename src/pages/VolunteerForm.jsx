@@ -335,7 +335,6 @@ const VolunteerForm = () => {
             onChange={(e) =>
               handleInputChange("additionalInfo", "add", e.target.value)
             }
-            required
           />
         </label>
 
@@ -360,7 +359,7 @@ const VolunteerForm = () => {
 
         <label>
           Signature:
-          <input type="text" value={name} onChange={handleNameChange} />
+          <input type="text" value={name} onChange={handleNameChange} required />
         </label>
         <br />
 

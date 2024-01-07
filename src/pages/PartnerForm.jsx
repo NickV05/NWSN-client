@@ -246,7 +246,6 @@ const PartnerForm = () => {
             onChange={(e) =>
               handleInputChange("organizationInfo", "website", e.target.value)
             }
-            required
           />
         </label>
 
