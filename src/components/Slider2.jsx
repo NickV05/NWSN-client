@@ -6,7 +6,7 @@ const Slider2 = () => {
   const [sponsors, setSponsors] = useState([]);
 
   const getAllSponsors = () => {
-    get("/home/sponsors")
+    get("/home/partners")
       .then((response) => {
         const sortedSponsors = response.data.sort(
           (a, b) => new Date(b.createdAt) - new Date(a.createdAt)

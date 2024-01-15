@@ -135,7 +135,7 @@ const Navbar = () => {
                   <Link to="/funding">Resources & Funding Opportunities for Members</Link>
                   <Link>Free/Discounted Good & Services for Members</Link>
                   <Link to="/library">Comprehensive Resource Library</Link>
-                  <Link>The Women’s Equity Project</Link>
+                  <Link to="https://womensequityproject.org">The Women’s Equity Project</Link>
                   <Link>Infographics & Reports</Link>
                 </div>
               )}

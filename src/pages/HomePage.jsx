@@ -99,7 +99,7 @@ const HomePage = () => {
       <div className="table1">
         <div className="table2">
           <h5>Need Help?</h5>
-          <Link>Find an NWSN Member near you in our Directory</Link>
+          <Link to="http://nationalwomensshelterdirectory.org">Find an NWSN Member near you in our Directory</Link>
         </div>
 
         <div className="table2">
@@ -154,7 +154,7 @@ const HomePage = () => {
 
           <Link>Public Policy, Infographics & Reports</Link>
 
-          <Link>The Women’s Equity Project</Link>
+          <Link to="https://womensequityproject.org/">The Women’s Equity Project</Link>
 
           <Link>Comprehensive Resource Library</Link>
 
@@ -288,8 +288,8 @@ const HomePage = () => {
         homelessness, trauma-informed best practices and solutions to ending
         homelessness, and the need for more resources for women and children and
         the shelters that serve them, calling on leaders at all levels of
-        government, business, finance, philanthropy and communities across the
-        nation to address the growing crisis. (link to conference page). The
+        government, business, finance, <Link to="https://thenwsnconference.org">philanthropy and communities across the
+        nation to address the growing crisis</Link>p. The
         NWSN hosted a national press conference on September 6th, 2023,
         accompanied by NWSN’s official spokeswoman Gloria Estefan (link to
         Medial Advisory and videos of the press conference) to demand action and

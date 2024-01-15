@@ -74,7 +74,7 @@ const Membership = () => {
           <h3>Shared Community & Shared Learning In The Network</h3>
           <h3>Resources & Funding Opportunities</h3>
           <h3>
-            <Link>National Conference & Discounted Registration</Link>
+            <Link to="http://thenwsnconference.org">National Conference & Discounted Registration</Link>
           </h3>
         </div>
 
@@ -109,7 +109,7 @@ const Membership = () => {
         </div>
 
         <div className="table1 box">
-          <h3>Equity Project</h3>
+          <Link to="https://womensequityproject.org">Equity Project</Link>
           <h3>Best Practices</h3>
           <h3>Needed for Successful Transitions</h3>
           <h3>Questions and Guide Your Planning</h3>
@@ -192,7 +192,7 @@ const Membership = () => {
         </div>
       </div>
 
-      <h3>Hear from Our Members~ </h3>
+      <h3>Hear from Our Members: </h3>
 
       <SliderMembers />
 
