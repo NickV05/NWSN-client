@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { AuthContext } from "../context/auth.context";
 const ResAndOp = () => {
-const { user, logOutUser } = useContext(AuthContext);    
+const { user } = useContext(AuthContext);    
   return (
     <section className="section">
       <h2>Resources & Funding Opportunities To End and Prevent Homelessness</h2>
@@ -18,7 +18,7 @@ const { user, logOutUser } = useContext(AuthContext);
         work and be their very best.{" "}
       </p>
 
-    <Link>Visit Our Members Portal and the <i>Network Forum</i> for Funding Alerts</Link>
+      {user?.member && <Link to={`/portal/${user._id}`}>Visit Our Members Portal and the <i>Network Forum</i> for Funding Alerts</Link>}
       <h4>
         Are You a Grant Funder or Donor? Let us work together to save and change
         lives

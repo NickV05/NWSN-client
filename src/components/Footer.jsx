@@ -37,10 +37,8 @@ const Footer = () => {
           <div className="table2">
             <h5>QUICK LINKS</h5>
             <ul className="table2">
-              <Link>Our Impact</Link>
-              <Link>News & Advocacy Alerts</Link>
+              <Link to="/news/:media">News & Advocacy Alerts</Link>
               <Link to="/about/:NWSN">About Us</Link>
-              <Link>Get Involved</Link>
               <Link>Contact Us</Link>
               {user && user.member ?
             <button><Link to={`/portal/${user._id}`}>Member Portal</Link></button>:
@@ -52,10 +50,10 @@ const Footer = () => {
 
           <div className="table2">
             <h5>FOLLOW US</h5>
-            <a href="https://www.instagram.com/thenwsn" target="blank">Instagram</a>
-            <a href="https://www.facebook.com/nationalwomensshelternetwork" target="blank">Facebook</a>
-            <a href="https://twitter.com/thenwsn" target="blank">Twitter</a>
-            <a href="https://www.youtube.com/@thenwsn_org" target="blank">Youtube</a>
+            <a href="https://www.instagram.com/thenwsn" target="blank"><img src="/inst.png" alt="instagram" />Instagram</a>
+            <a href="https://www.facebook.com/nationalwomensshelternetwork" target="blank"><img src="/facebook.png" alt="facebook" />Facebook</a>
+            <a href="https://twitter.com/thenwsn" target="blank"><img src="/twitter.png" alt="twitter" />X</a>
+            <a href="https://www.youtube.com/@thenwsn_org" target="blank"><img src="/youtube-icon.png" alt="youtube" />Youtube</a>
           </div>
         </div>
 

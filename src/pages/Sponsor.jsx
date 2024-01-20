@@ -20,7 +20,7 @@ const Sponsor = () => {
       <div className="table2">
         <div className="table1">
           <h5>DIAMOND SPONSORS $100,000+</h5>
-          <Link>Lotus House logo & link to page</Link>
+          <Link to ="https://lotushouse.org/"><img src="https://res.cloudinary.com/dyto7dlgt/image/upload/v1705282598/NWSN/Logo_r2gib5.jpg" alt="lotus house"/></Link>
           <Link>Sponsor logo link to page</Link>
           <Link>Sponsor logo link to page</Link>
           <Link>Sponsor logo link to page</Link>
@@ -60,7 +60,7 @@ const Sponsor = () => {
         <div className="table1">
           <h5>SAPPHIRE SPONSORS $10,000+</h5>
 
-          <Link>Sponsor logo link to page</Link>
+          <Link to="https://www.aimbridgehospitality.com/"><img src="https://res.cloudinary.com/dyto7dlgt/image/upload/v1705282843/NWSN/7Aimbridge_ID_PMS-FullColor_jarrhv.png" alt="aumbridge"/></Link>
           <Link>Sponsor logo link to page</Link>
           <Link>Sponsor logo link to page</Link>
           <Link>Sponsor logo link to page</Link>

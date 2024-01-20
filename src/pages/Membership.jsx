@@ -56,7 +56,7 @@ const Membership = () => {
 
       <div className="table1">
         <Link to="/memberForm">Regular Membership Application</Link>
-        <Link>
+        <Link to="/memberForm">
           Local/State/Regional/National Association, Network or Coalition
           Membership Application
         </Link>
