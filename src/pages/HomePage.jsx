@@ -142,9 +142,11 @@ const HomePage = () => {
             Advancing Standards of Care: Education, Training & Capacity Building
           </Link>
 
-          <Link>Funding and Resources to End and Prevent Homelessness</Link>
+          <Link to="https://drive.google.com/drive/folders/1G_PQIziz-ipYd46fO4Zs9Jn6QJO386RS?usp=sharing">
+          Funding and Resources to End and Prevent Homelessness</Link>
 
-          <Link>Free/Discounted Goods & Services </Link>
+          <Link to="https://drive.google.com/drive/folders/1qsOFjepeGNM1OfFMAzivQaABcHa0S14P?usp=drive_link">
+          Free/Discounted Goods & Services </Link>
 
           <Link>Building Shared Community</Link>
         </div>
@@ -156,7 +158,8 @@ const HomePage = () => {
 
           <Link to="https://womensequityproject.org/">The Women’s Equity Project</Link>
 
-          <Link>Comprehensive Resource Library</Link>
+          <Link to="https://drive.google.com/drive/folders/17aXgcsCNX5EAzqouWF0254EA-qSpq8wB?usp=drive_link">
+          Comprehensive Resource Library</Link>
 
           <Link>Latest News and Advocacy Alerts</Link>
         </div>
@@ -171,7 +174,7 @@ const HomePage = () => {
               <CountUp
                 enableScrollSpy
                 delay={0.6}
-                end={178885}
+                end={578201}
                 duration={2.2}
               />{" "}
               +
@@ -184,7 +187,7 @@ const HomePage = () => {
               <CountUp
                 enableScrollSpy
                 delay={0.6}
-                end={348096}
+                end={1683154}
                 duration={2.2}
               />{" "}
               +
@@ -194,59 +197,46 @@ const HomePage = () => {
 
           <div>
             <h2>
-              <CountUp enableScrollSpy delay={0.6} end={15391} duration={2.2} />{" "}
+              <CountUp enableScrollSpy delay={0.6} end={18097} duration={2.2} />{" "}
               +
             </h2>
-            <h2 >WOMEN AND CHILDREN SHELTERED OR HOUSED ANNUALLY</h2>
+            <h2 >WOMEN SHELTERED OR HOUSED ANNUALLY</h2>
+          </div>
+
+          <div className="table1">
+
           </div>
 
           <div>
             <h2>
-              <CountUp enableScrollSpy delay={0.6} end={13948} duration={2.2} />{" "}
+              <CountUp enableScrollSpy delay={0.6} end={51798} duration={2.2} />{" "}
               +
             </h2>
             <h2> COUNSELING SESSIONS ANNUALLY</h2>
           </div>
-        </div>
 
-        <div className="table1">
           <div>
             <h2>
-              <CountUp enableScrollSpy delay={0.6} end={758} duration={2.2} /> +
+              <CountUp enableScrollSpy delay={0.6} end={3117} duration={2.2} /> +
             </h2>
-            <h2>EMPLOYMENT ASSISTANCE AND TRAINING PROVIDED</h2>
+            <h2>CHILDREN SHELTERED OR HOUSED ANNUALLY</h2>
           </div>
 
           <div>
             <h2>
-              <CountUp enableScrollSpy delay={0.6} end={1151} duration={2.2} />{" "}
+              <CountUp enableScrollSpy delay={0.6} end={1802} duration={2.2} />{" "}
               +
             </h2>
-            <h2> ARTS AND ENRICHMENT ACTIVITIES HOSTED</h2>
+            <h2> BED NIGHTS</h2>
           </div>
 
-          <div>
-            <h2>
-              <CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2} />{" "}
-              +
-            </h2>
-            <h2>LIVES CHANGED</h2>
-          </div>
-
-          <div>
-            <h2>
-              <CountUp enableScrollSpy delay={0.6} end={6714} duration={2.2} />{" "}
-              +
-            </h2>
-            <h2>EDUCATIONAL SUPPORTS FOR ALL AGES</h2>
-          </div>
         </div>
       </div>
 
       <h3>OUR MEMBERS</h3>
       <div className="table2">
         <img src="" alt="map" />
-        <Link>Looking for an NWSN Member Near You?</Link>
+        <Link to="http://nationalwomensshelterdirectory.org">Looking for an NWSN Member Near You?</Link>
         <Link to="/membership">Join the NWSN And Discover the Benefits of Membership Today</Link>
       </div>
 
@@ -291,8 +281,8 @@ const HomePage = () => {
         government, business, finance, <Link to="https://thenwsnconference.org">philanthropy and communities across the
         nation to address the growing crisis</Link>p. The
         NWSN hosted a national press conference on September 6th, 2023,
-        accompanied by NWSN’s official spokeswoman Gloria Estefan (link to
-        Medial Advisory and videos of the press conference) to demand action and
+        accompanied by NWSN’s official spokeswoman Gloria Estefan (<Link to="https://docs.google.com/document/d/1lTlHq6t3eeGIeQNi6xq3rNEIiDJqHsxj/edit">link to
+        Medial Advisory</Link> <Link to="https://www.instagram.com/thenwsn">and videos of the press conference</Link>) to demand action and
         met on October 16, 2023, with Federal Officials from DOJ, HUD, HHS,
         FEMA, DOE, DOL and more (link to photos and position paper we
         delivered), to raise awareness of what is happening every day on the
