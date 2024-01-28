@@ -50,10 +50,10 @@ const Footer = () => {
 
           <div className="table2">
             <h5>FOLLOW US</h5>
-            <a href="https://www.instagram.com/thenwsn" target="blank"><img src="/inst.png" alt="instagram" />Instagram</a>
-            <a href="https://www.facebook.com/nationalwomensshelternetwork" target="blank"><img src="/facebook.png" alt="facebook" />Facebook</a>
-            <a href="https://twitter.com/thenwsn" target="blank"><img src="/twitter.png" alt="twitter" />X</a>
-            <a href="https://www.youtube.com/@thenwsn_org" target="blank"><img src="/youtube-icon.png" alt="youtube" />Youtube</a>
+            <a href="https://www.instagram.com/thenwsn" target="blank"><img className="icon-container" src="/inst.png" alt="instagram" />Instagram</a>
+            <a href="https://www.facebook.com/nationalwomensshelternetwork" target="blank"><img className="icon-container" src="/facebook.png" alt="facebook" />Facebook</a>
+            <a href="https://twitter.com/thenwsn" target="blank"><img className="icon-container" src="/twitter.png" alt="twitter" />X</a>
+            <a href="https://www.youtube.com/@thenwsn_org" target="blank"><img className="icon-container" src="/youtube-icon.png" alt="youtube" />Youtube</a>
           </div>
         </div>
 
