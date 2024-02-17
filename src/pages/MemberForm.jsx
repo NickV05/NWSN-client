@@ -3,6 +3,7 @@ import { post } from '../services/authService';
 import { useNavigate } from 'react-router-dom';
 import FileUpload1 from '../components/FileUploader1';
 import FileUpload2 from '../components/FileUploader2';
+import { useEffect } from 'react';
 
 
 const MemberForm = () => {
@@ -69,6 +70,7 @@ const MemberForm = () => {
   const [name, setName] = useState('');
   const [files1, setFiles1] = useState([]);
   const [files2, setFiles2] = useState([]);
+  const [ entries, setEntries] =useState([]);
 
   const duesData = [
     { range: '0-$250,000', dues: 125, persons: 1 },
@@ -87,31 +89,53 @@ const MemberForm = () => {
     setName(e.target.value);
   };
 
+  useEffect(() => {
+    console.log("files1 ===>", files1);
+    console.log("files2 ===>", files2);
+  },[files1, files2])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (name.length) {
-
       console.log('Name:', name);
       console.log('Agreed to terms');
+  
       const formData = new FormData();
-      formData.append('file', files1);
-
-      post("/forms/memberForm", {
+  
+      files1.forEach((file, index) => {
+        formData.append(`file${index + 1}`, file);
+      });
+  
+      const entriesArray = [];
+  
+      for (const entry of formData.entries()) {
+        entriesArray.push(entry);
+      }
+  
+      setEntries(entriesArray);
+  
+      console.log("FormData ==>", formData);
+  
+      await post("/forms/memberForm", {
         organizationInfo: organizationInfo,
         mainContactInfo: mainContactInfo,
         membershipEligibility: membershipEligibility,
         additionalInfo: additionalInfo,
-        files: formData, 
-        name:name
-
-      })
+        name: name
+      }, formData);
+  
       navigate("/confirmation");
     } else {
       alert('Please agree to the terms before submitting.');
     }
   };
+
+
+  useEffect(() => {
+    console.log("Entries ===>", entries);
+  }, [entries]);
+  
 
 
   const handleInputChange = (category, fieldName, value) => {

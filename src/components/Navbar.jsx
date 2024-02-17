@@ -85,16 +85,8 @@ const Navbar = () => {
       <div className="logo-container">
         <img className="logo" src="/NWSN_LOGO-01.png" alt="logo" />
       </div>
-      {user && (
         <div className="right-side">
           <div className="menu1">
-            {user?.member ? (
-              <button>
-                <Link to={`/portal/${user._id}`}>Members</Link>
-              </button>
-            ) : (
-              <button disabled="true">Members</button>
-            )}
             {user?.admin && (
               <button>
                 <Link to="adminPortal">Admin Portal</Link>
@@ -217,7 +209,7 @@ const Navbar = () => {
             <Link>CONTACT US</Link>
           </div>
         </div>
-      )}
+
     </nav>
   );
 };

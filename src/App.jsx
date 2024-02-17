@@ -13,7 +13,6 @@ import { useState, useEffect } from "react";
 import Sponsor from "./pages/Sponsor";
 import Partner from "./pages/Partner";
 import Financials from "./pages/Financials";
-import MembersPortal from "./pages/MembersPortal";
 import Library from "./pages/Library";
 import OurMembers from "./pages/OurMembers";
 import Funding from "./pages/Funding";
@@ -67,7 +66,6 @@ function App() {
               <Route path="/sponsor" element={<Sponsor />} />
               <Route path="/partner" element={<Partner />} />
               <Route path="/financials" element={<Financials />} />
-              <Route path="/portal/:id" element={<MembersPortal />} />
               <Route path="/library" element={<Library />} />
               <Route path="/members" element={<OurMembers />} />
               <Route path="/funding" element={<Funding />} />
@@ -84,10 +82,10 @@ function App() {
               <Route path="/resandop" element={<ResAndOp />} />
               <Route path="/support" element={<SupportShelters />} />
               <Route path="/freegoods" element={<FreeGoodMemb />} />
+              <Route path="/" element={<HomePage />} />
             </Route>
 
             <Route element={<NotLoggedIn />}>
-            <Route path="/" element={<HomePage />} />
               <Route path="/signup" element={<SignupPage />} />
               <Route path="/login" element={<LoginPage />} />
             </Route>
